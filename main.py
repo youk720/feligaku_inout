@@ -144,7 +144,7 @@ with nfc.ContactlessFrontend('usb') as m:
           # 終了
           break
         # 特定外のタッチ
-        elif x == 5 and gaku_error == 1:
+        elif x == range(len(gakulist_1)-1) and gaku_error == 1:
           gaku_error = 0
           print("another gakusyo")
           felica_error()
